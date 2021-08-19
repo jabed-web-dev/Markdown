@@ -96,17 +96,14 @@ Strikethrough uses two tildes. ~Scratch~ and ~~Scratch this~~
 
 ~~~md
 #### Details
-<details>
-  <summary>Click to expand!</summary>
-  <blockquote>
+<details><summary>Click to expand!</summary><blockquote>
     
 ```js
   function sum(a, b) {
     return a + b;
   }
 ```
-  </blockquote>
-</details>
+</blockquote></details>
 
 #### Nested details
 <details><summary>JavaScript</summary><blockquote>
@@ -129,9 +126,7 @@ false
 ~~~
 
 #### Details
-<details>
-  <summary>Click to expand!</summary>
-  <blockquote>
+<details><summary>Click to expand!</summary><blockquote>
     
 ```js
   function sum(a, b) {
