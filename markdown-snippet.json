@@ -189,7 +189,7 @@
   },
   "Link reference": {
     "prefix": "lr",
-    "body": "[${TM_SELECTED_TEXT:${1:text}}]: ${2:https://} ${3:\"Title\"}$0",
+    "body": "[${TM_SELECTED_TEXT:${1:text}}]: ${2:https://} \"${3:Title}\"$0",
     "description": "Link reference"
   },
   "Image": {
@@ -197,17 +197,31 @@
     "body": "![${TM_SELECTED_TEXT:${1:alt}}](${2:https://})$0",
     "description": "Image"
   },
-  "Image size": {
+  "Image with size": {
     "prefix": "img-s",
     "body": "<img src=\"${1:https://}\" alt=\"${2:alt}\" width=\"${3:200}\" height=\"${4:200}\">$0",
     "description": "Image size"
+  },
+  "Image link": {
+    "prefix": "imgl",
+    "body": "[![${TM_SELECTED_TEXT:${1:alt}}](${2:https://image})](${3:https://link} \"${4:Title}\")$0",
+    "description": "Image link"
+  },
+  "Image link with size": {
+    "prefix": "imgl-s",
+    "body": [
+      "<a href=\"${1:https://link}\" title=\"${2:Title}\">",
+      "  <img src=\"${3:https://image}\" alt=\"${4:alt}\" width=\"${5:100}\" height=\"${6:100}\">",
+      "</a>$0"
+    ],
+    "description": "Image link with size"
   },
   "Video": {
     "prefix": "vdo",
     "body": "[![${1:alt}](${2:https://thumbnail})](${3:https://video} \"${4:Title}\")$0",
     "description": "Video"
   },
-  "Video size": {
+  "Video with size": {
     "prefix": "vdo-s",
     "body": [
       "<a href=\"${1:https://video}\" title=\"${2:Title}\">",
