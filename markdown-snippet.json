@@ -1,0 +1,328 @@
+{
+  "Bold text b": {
+    "prefix": "b",
+    "body": "**${1:${TM_SELECTED_TEXT}}**$0",
+    "description": "Bold text"
+  },
+  "Bold text **": {
+    "prefix": "**",
+    "body": "**${1:${TM_SELECTED_TEXT}}**$0",
+    "description": "Bold text"
+  },
+  "Italic text i": {
+    "prefix": "i",
+    "body": "*${1:${TM_SELECTED_TEXT}}*$0",
+    "description": "Italic text"
+  },
+  "Italic text *": {
+    "prefix": "*",
+    "body": "*${1:${TM_SELECTED_TEXT}}*$0",
+    "description": "Italic text"
+  },
+  "Bold and italic text bi": {
+    "prefix": "bi",
+    "body": "***${1:${TM_SELECTED_TEXT}}***$0",
+    "description": "Bold and italic text"
+  },
+  "Bold and italic text ***": {
+    "prefix": "***",
+    "body": "***${1:${TM_SELECTED_TEXT}}***$0",
+    "description": "Bold and italic text"
+  },
+  "Blockquote q": {
+    "prefix": "q",
+    "body": "> ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Blockquote"
+  },
+  "Blockquote >": {
+    "prefix": ">",
+    "body": "> ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Blockquote"
+  },
+  "Nested blockquote qq": {
+    "prefix": "qq",
+    "body": ">> ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Nested blockquote"
+  },
+  "Nested blockquote >>": {
+    "prefix": ">>",
+    "body": ">> ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Nested blockquote"
+  },
+  "Inline code c": {
+    "prefix": "c",
+    "body": "`${1:${TM_SELECTED_TEXT}}`$0",
+    "description": "Inline code"
+  },
+  "Inline code `": {
+    "prefix": "`",
+    "body": "`${1:${TM_SELECTED_TEXT}}`$0",
+    "description": "Inline code"
+  },
+  "Code block cb": {
+    "prefix": "cb",
+    "body": [
+      "```${1|javascript,typescript,html,css,json,pwsh,python,c,c++,c#,rust,ruby,go,java,php,markdown,console|}",
+      "${TM_SELECTED_TEXT}$0",
+      "```"
+    ],
+    "description": "Code block"
+  },
+  "Code block ```": {
+    "prefix": "```",
+    "body": [
+      "```${1|javascript,typescript,html,css,json,pwsh,python,c,c++,c#,rust,ruby,go,java,php,markdown,console|}",
+      "${TM_SELECTED_TEXT}$0",
+      "```"
+    ],
+    "description": "Code block"
+  },
+  "Heading level h1": {
+    "prefix": "h1",
+    "body": "# ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 1"
+  },
+  "Heading level #": {
+    "prefix": "#",
+    "body": "# ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 1"
+  },
+  "Heading level h2": {
+    "prefix": "h2",
+    "body": "## ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 2"
+  },
+  "Heading level ##": {
+    "prefix": "##",
+    "body": "## ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 2"
+  },
+  "Heading level h3": {
+    "prefix": "h3",
+    "body": "### ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 3"
+  },
+  "Heading level ###": {
+    "prefix": "###",
+    "body": "### ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 3"
+  },
+  "Heading level h4": {
+    "prefix": "h4",
+    "body": "#### ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 4"
+  },
+  "Heading level ####": {
+    "prefix": "####",
+    "body": "#### ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 4"
+  },
+  "Heading level h5": {
+    "prefix": "h5",
+    "body": "##### ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 5"
+  },
+  "Heading level #####": {
+    "prefix": "#####",
+    "body": "##### ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 5"
+  },
+  "Heading level h6": {
+    "prefix": "h6",
+    "body": "###### ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 6"
+  },
+  "Heading level ######": {
+    "prefix": "######",
+    "body": "###### ${1:${TM_SELECTED_TEXT}}$0",
+    "description": "Heading level 6"
+  },
+  "Unordered list ul": {
+    "prefix": "ul",
+    "body": [
+      "- ${1:first}",
+      "- ${2:second}",
+      "- ${3:third}",
+      "$0"
+    ],
+    "description": "Unordered list"
+  },
+  "Ordered list ol": {
+    "prefix": "ol",
+    "body": [
+      "1. ${1:first}",
+      "2. ${2:second}",
+      "3. ${3:third}",
+      "$0"
+    ],
+    "description": "Ordered list"
+  },
+  "Horizontal rule hr": {
+    "prefix": "hr",
+    "body": "----------\n$0",
+    "description": "Horizontal rule"
+  },
+  "Horizontal rule ---": {
+    "prefix": "---",
+    "body": "----------\n$0",
+    "description": "Horizontal rule"
+  },
+  "Break line br": {
+    "prefix": "br",
+    "body": "<br>$0",
+    "description": "Break line"
+  },
+  "Link a": {
+    "prefix": "a",
+    "body": "<a href=\"${2:https://}\">${TM_SELECTED_TEXT:${1:text}}</a>$0",
+    "description": "Link a"
+  },
+  "Link l": {
+    "prefix": "l",
+    "body": "[${TM_SELECTED_TEXT:${1:text}}](${2:https://})$0",
+    "description": "Link"
+  },
+  "Link with title": {
+    "prefix": "lt",
+    "body": "[${TM_SELECTED_TEXT:${1:text}}](${2:https://} \"${3:Title}\")$0",
+    "description": "Link title"
+  },
+  "Link reference": {
+    "prefix": "lr",
+    "body": "[${TM_SELECTED_TEXT:${1:text}}]: ${2:https://} ${3:\"Title\"}$0",
+    "description": "Link reference"
+  },
+  "Image": {
+    "prefix": "img",
+    "body": "![${TM_SELECTED_TEXT:${1:alt}}](${2:https://})$0",
+    "description": "Image"
+  },
+  "Image size": {
+    "prefix": "img-s",
+    "body": "<img src=\"${1:https://}\" alt=\"${2:alt}\" width=\"${3:200}\" height=\"${4:200}\">$0",
+    "description": "Image size"
+  },
+  "Video": {
+    "prefix": "vdo",
+    "body": "[![${1:alt}](${2:https://thumbnail})](${3:https://video} \"${4:Title}\")$0",
+    "description": "Video"
+  },
+  "Video size": {
+    "prefix": "vdo-s",
+    "body": [
+      "<a href=\"${1:https://video}\" title=\"${2:Title}\">",
+      "  <img src=\"${3:https://thumbnail}\" alt=\"${4:alt}\" width=\"${5:200}\" height=\"${6:200}\">",
+      "</a>$0"
+    ],
+    "description": "Video size"
+  },
+  "Strike through s": {
+    "prefix": "s",
+    "body": "~~${1:${TM_SELECTED_TEXT}}~~$0",
+    "description": "Strike through"
+  },
+  "Strike through ~~": {
+    "prefix": "~~",
+    "body": "~~${1:${TM_SELECTED_TEXT}}~~$0",
+    "description": "Strike through"
+  },
+  "Emoji e": {
+    "prefix": "e",
+    "body": ":${TM_SELECTED_TEXT:${1:name}}:$0",
+    "description": "Emoji URL: https://gist.github.com/rxaviers/7360908"
+  },
+  "Emoji :": {
+    "prefix": ":",
+    "body": ":${TM_SELECTED_TEXT:${1:name}}:$0",
+    "description": "Emoji URL: https://gist.github.com/rxaviers/7360908"
+  },
+  "Inline math $": {
+		"prefix": [
+			"$"
+		],
+		"body": "$${1:${TM_SELECTED_TEXT}}$$0",
+		"description": "Inline math"
+	},
+	"Math block $$": {
+		"prefix": [
+			"$$"
+		],
+		"body": [
+			"$$",
+			"${1:${TM_SELECTED_TEXT}}",
+			"$$$0"
+		],
+		"description": "Math block"
+	},
+  "Task list x": {
+    "prefix": "x",
+    "body": [
+      "- [${1:x}] ${2:Task1}",
+      "- [${3: }] ${4:Task2}",
+      "- [${5: }] ${6:Task3}",
+      "$0"
+    ],
+    "description": "Task list"
+  },
+  "Task list []": {
+    "prefix": "[]",
+    "body": [
+      "- [${1:x}] ${2:Task1}",
+      "- [${3: }] ${4:Task2}",
+      "- [${5: }] ${6:Task3}",
+      "$0"
+    ],
+    "description": "Task list"
+  },
+  "Table": {
+    "prefix": "table",
+    "body": [
+      "${1:Header-1} | ${2:Header-2} | ${3:Header-3}",
+      "-------- | -------- | --------",
+      "${4:Item-1}   | ${5:Item-2}   | ${6:Item-3}",
+      "${7:Item-4}   | ${8:Item-5}   | ${9:Item-6}",
+      "$0"
+    ],
+    "description": "Table"
+  },
+  "Details": {
+    "prefix": [
+      "details"
+    ],
+    "body": [
+      "<details><summary>${1:Summary}</summary><blockquote>\n",
+      "${TM_SELECTED_TEXT:${2:blockquote}}",
+      "</blockquote></details>$0"
+    ],
+    "description": "Details"
+  },
+  "Nested Details": {
+    "prefix": [
+      "details-n"
+    ],
+    "body": [
+      "<details><summary>${1:Summary}</summary><blockquote>",
+      "<details><summary>${2:Nested summary 1}</summary><blockquote>\n",
+      "${TM_SELECTED_TEXT:${3:blockquote 1}}",
+      "</blockquote></details>",
+      "<details><summary>${4:Nested summary 2}</summary><blockquote>\n",
+      "${5:blockquote 2}",
+      "</blockquote></details>",
+      "</blockquote></details>$0"
+    ],
+    "description": "Details nested"
+  },
+  "Table of contents": {
+    "prefix": [
+      "table-c"
+    ],
+    "body": [
+      "### Table of contents",
+      "  * [${1:Header1}](#${1:Header1})",
+      "  * [${2:Header2}](#${2:Header2})",
+      "  * [${3:Header3}](#${3:Header3})",
+      "$0"
+    ],
+    "description": "Table of contents"
+  }
+}
