@@ -211,24 +211,38 @@
     "prefix": "imgl-s",
     "body": [
       "<a href=\"${1:https://link}\" title=\"${2:Title}\">",
-      "  <img src=\"${3:https://image}\" alt=\"${4:alt}\" width=\"${5:100}\" height=\"${6:100}\">",
+      "  <img src=\"${3:https://image}\" alt=\"${4:alt}\" width=\"${5:200}\" height=\"${6:200}\">",
       "</a>$0"
     ],
     "description": "Image link with size"
   },
   "Video": {
     "prefix": "vdo",
-    "body": "[![${1:alt}](${2:https://thumbnail})](${3:https://video} \"${4:Title}\")$0",
+    "body": "[![${1:alt}](${2:https://thumbnail})](${3:https://video} \"${4:Play ▶}\")$0",
     "description": "Video"
+  },
+  "YouTube video": {
+    "prefix": "yt-vdo",
+    "body": "[![${1:alt}](https://i.ytimg.com/vi_webp/${2:<video-id>}/maxresdefault.webp)](https://www.youtube.com/embed/${3:<video-id>} \"${4:Play ▶}\")$0",
+    "description": "YouTube video"
   },
   "Video with size": {
     "prefix": "vdo-s",
     "body": [
-      "<a href=\"${1:https://video}\" title=\"${2:Title}\">",
+      "<a href=\"${1:https://video}\" title=\"${2:Play ▶}\">",
       "  <img src=\"${3:https://thumbnail}\" alt=\"${4:alt}\" width=\"${5:200}\" height=\"${6:200}\">",
       "</a>$0"
     ],
-    "description": "Video size"
+    "description": "Video with size"
+  },
+  "YouTube video with size": {
+    "prefix": "yt-vdo-s",
+    "body": [
+      "<a href=\"https://www.youtube.com/embed/${1:<video-id>}\" title=\"${2:Play ▶}\">",
+      "  <img src=\"https://i.ytimg.com/vi_webp/${3:<video-id>}/maxresdefault.webp\" alt=\"${4:alt}\" width=\"${5:200}\" height=\"${6:200}\">",
+      "</a>$0"
+    ],
+    "description": "YouTube video with size"
   },
   "Strike through s": {
     "prefix": "s",
@@ -268,8 +282,8 @@
 		],
 		"description": "Math block"
 	},
-  "Task list x": {
-    "prefix": "x",
+  "Task list": {
+    "prefix": "task",
     "body": [
       "- [${1:x}] ${2:Task1}",
       "- [${3: }] ${4:Task2}",
