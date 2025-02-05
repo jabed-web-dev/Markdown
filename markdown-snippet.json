@@ -202,6 +202,11 @@
     "body": "![${TM_SELECTED_TEXT:${1:alt}}](${2:https://})$0",
     "description": "Image"
   },
+  "Image GitHub": {
+    "prefix": "img-gh",
+    "body": "![${TM_SELECTED_TEXT:${1:alt}}](https://raw.githubusercontent.com/${2:<user/repository>}/main/image.png)$0",
+    "description": "Image GitHub"
+  },
   "Image with Size (img-s)": {
     "prefix": "img-s",
     "body": "<img src=\"${1:https://}\" alt=\"${2:alt}\" width=\"${3:200}\" height=\"${4:200}\">$0",
